@@ -23,12 +23,16 @@
         - rows will be divided up into quarters
         - columns are divided into 8ths
     */
+    display: grid;
+    grid-template: repeat(4, 25%) / repeat(8, 12.5%);
 }
 
 .grid-sample h1 {   
     /* 
         - the h1 spans the width of 8 columns
     */
+    text-align: center;
+    grid-column: span 8;
 }
 
 #grid-sidebar {
@@ -36,12 +40,17 @@
         - Will start in column 1 and only cover 2 columns
         - Will start on the second row and cover only 2 rows.
     */  
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    grid-row-end: span 2;
 }
 
 #grid-article {   
     /* 
         - row start / column start / row end / column end
     */
+    grid-area: 2 / 3 / 3 / 9;
 }
 
 .grid-sample footer {   
@@ -50,5 +59,8 @@
         - Will start at the 4th row.
             - Doesn't need to note ending as this is the last row.
     */
+    text-align: center;
+    grid-column: 1 / span 8;
+    grid-row: 4;
 }
 
