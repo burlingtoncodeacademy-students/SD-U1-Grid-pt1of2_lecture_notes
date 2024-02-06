@@ -1,0 +1,64 @@
+@import url('./grid.css');
+
+html body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3, b {
+    text-decoration: underline red;
+}
+
+/* GRID STATIC INFO */
+.grid-sample {
+    border: 2px solid black;
+    margin: 1em;
+    height: 45vh;
+}
+
+.grid-sample h1 {
+    width: 100%;
+}
+
+#grid-sidebar {
+    margin: auto;
+    padding: .25em 1.5em;
+    text-align: center;
+}
+
+#grid-article {
+    padding: 1em;
+    margin: auto;;
+}
+
+.grid-sample footer {
+    padding: .5rem 0;
+    width: 100%;
+}
+
+footer ul {
+    height: auto;
+    padding: auto;
+}
+
+.grid-sample footer ul li{
+    display: inline;
+    margin: 0 2em;
+}
+
+footer ul li {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
